@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rcade/game.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -102,7 +103,7 @@ class _SignInState extends State<SignIn> {
                 color: Color(0xFFFA505B),
               ),
               child: GestureDetector(
-                onTap: null,
+                onTap: () =>  Navigator.push(context,MaterialPageRoute(builder: (context) => Game(),),),
                 child: Text(
                   'Continue',
                   style: TextStyle(
